@@ -1,0 +1,45 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --btn-bg: #007bff;
+    --btn-text: white;
+  }
+  
+  body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --btn-bg: #444;
+    --btn-text: #f1f1f1;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #animateBtn.animate {
+    animation: bounce 0.6s ease;
+  }
+  
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
